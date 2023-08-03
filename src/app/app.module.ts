@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ListaComponent } from './lista/lista.component';
+import { MaterialModule } from './material.module';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { ListaComponent } from './lista/lista.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    MaterialModule,
     BrowserAnimationsModule
   ],
   providers: [],
