@@ -4,8 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ListaComponent } from './lista/lista.component';
 import { MaterialModule } from './material.module';
+import { ListaComponent } from './shared/components/lista/lista.component';
 
 @NgModule({
   declarations: [

@@ -7,8 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListaComponent implements OnInit {
 
-  items = ['Item 1', 'Item 2', 'Item 3'];
-
   constructor() { }
 
   ngOnInit(): void {
