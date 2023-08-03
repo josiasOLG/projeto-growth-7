@@ -1,1 +1,26 @@
-<router-outlet></router-outlet>
+<mat-toolbar color="primary" class="app-toolbar">
+  <button mat-icon-button (click)="sidenav.toggle()" *ngIf="mobileQuery.matches">
+    <mat-icon>menu</mat-icon>
+  </button>
+  Seu Aplicativo
+</mat-toolbar>
+
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #sidenav mode="side" opened="!mobileQuery.matches" class="sidenav">
+    <mat-nav-list>
+      <a mat-list-item [routerLink]="['/link1']">Link 1</a>
+      <a mat-list-item [routerLink]="['/link2']">Link 2</a>
+      <!-- Adicione mais links conforme necessário -->
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content class="mat-sidenav-content">
+    <div class="content-container">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+<footer class="app-footer">
+  <!-- Aqui vai o conteúdo do seu rodapé -->
+</footer>
