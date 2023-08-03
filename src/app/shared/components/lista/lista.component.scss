@@ -1,0 +1,43 @@
+.add-button {
+
+}
+.mat-table {
+  width: 100%;
+  .mat-header-cell,
+  .mat-cell {
+    text-align: center; // substitua por 'right' para alinhamento à direita
+  }
+
+  .mat-row:nth-child(even) {
+    background-color: #f8f8f8;
+  }
+  .mat-row:nth-child(odd) {
+    background-color: #e0e0e0;
+  }
+  .mat-row {
+    height: 48px; // ajuste para o valor desejado
+  }
+
+  .mat-cell {
+    border-bottom: 1px solid #ccc; // ajuste a cor e o estilo da borda como preferir
+  }
+  .mat-header-cell {
+    color: #ffffff;  // substitua por sua cor de texto preferida
+  }
+  .mat-header-row {
+    background-color: #3f51b5; // ajuste para a cor desejada
+    color: #fff; // ajuste para a cor desejada
+  }
+}
+
+.content-button{
+  margin: 20px 0;
+}
+.growth__content-form {
+  margin-bottom: 20px;
+  padding: 20px;
+  .full-width {
+    width: 100%;
+    padding: 0 10px;
+  }
+}
